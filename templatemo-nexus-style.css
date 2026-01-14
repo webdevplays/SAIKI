@@ -1024,6 +1024,34 @@ https://templatemo.com/tm-594-nexus-flow
             gap: 3rem;
         }
 
+
+       .feature-card1 {
+            background: var(--card-bg);
+            border: 1px solid var(--border-color);
+            padding: 0.5rem;
+            width: 500px;
+            margin: 0 auto;
+            position: relative;
+            transition: all 0.4s ease;
+            backdrop-filter: blur(10px);
+
+            clip-path: polygon(20px 0%, 100% 0%, 100% calc(100% - 20px), calc(100% - 20px) 100%, 0% 100%, 0% 20px);
+        }
+
+        .feature-card1::before {
+            content: 'Contract: 0000...0000';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(135deg, var(--primary-cyan), var(--primary-pink));
+            opacity: 0;
+            transition: opacity 0.3s ease;
+            z-index: -1;
+        }
+
+
         .feature-card {
             background: var(--card-bg);
             border: 1px solid var(--border-color);

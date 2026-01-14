@@ -72,13 +72,37 @@
             </ul>
         </nav>
     </div>
+<style>
+@media screen and (max-width: 600px) {
+  .hero_logo {
+    width: 50% !important;
+  }
+  .stat-number {
+    font-size: 2rem !important;
+  }
+  .feature-card1{
+    display: flex !important;
+    margin: 0 auto !important;
+    padding: 0.1rem !important;
+    width: 90% !important;
+    position: relative;
+    justify-content: center; /* Centers horizontally */
+  align-items: center;
 
+  }
+
+  .feature-card1::after{
+    content: "Contract: 0000...0000" !important;
+    position: absolute !important;
+  }
+}
+</style>
     <!-- Hero Section -->
     <section class="hero">
         <div class="hero-container">
             <h1 class="hero-title">
                 <span class="hero-nexus">KUSUO</span><span class="hero-flow">SAIKI</span>
-                <img src="/logo.jpg" style="width: 400px; height: auto; display: block; margin: 20px auto 0; border-left: 5px solid #48daff; border-right: 5px solid #ea48ff;" alt="Kusuo Saiki Logo">
+                <img class="hero_logo" src="/logo.jpg" style="width: 25%; height: auto; display: block; margin: 20px auto 0; border-left: 5px solid #48daff; border-right: 5px solid #ea48ff;" alt="Kusuo Saiki Logo">
             </h1>
             <p class="hero-subtitle">Kusuo Saiki moves through chaos without reacting—overqualified, underexpressed, always a step ahead.</p>
             <div class="hero-buttons">
@@ -109,6 +133,8 @@
                     <span class="stat-label">Countries</span>
                 </div>
             </div>
+  
+       </div>
         </div>
     </section>
 
