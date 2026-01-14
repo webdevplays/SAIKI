@@ -350,10 +350,10 @@ https://templatemo.com/tm-594-nexus-flow
 
         // Stats counter animation
         const animateStats = () => {
-            const stats = document.querySelectorAll('.stat-number');
+            const stats = document.querySelectorAll('');
             stats.forEach(stat => {
                 const target = parseInt(stat.textContent.replace(/[^\d]/g, ''));
-                let count = 0;
+                let count = 100;
                 const increment = target / 100;
                 const timer = setInterval(() => {
                     count += increment;
